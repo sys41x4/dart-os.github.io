@@ -88,8 +88,27 @@
     <section id="view-project-repository" class="py-5 bg-light">
       <div class="container">
         <h4 class="mb-4">Package Repositories</h4>
-        <p>OFFICIAL DART-OS DEBIAN PACKAGE REPOSITORY : <a href="https://dart-os.github.io/deb/">https://dart-os.github.io/deb/</a><br>
-        OFFICIAL DART-OS GPG/other KEYS REPOSITORY : <a href="https://dart-os.github.io/keys/">https://dart-os.github.io/keys/</a></p>        
+        <p>OFFICIAL DART-OS DEBIAN PACKAGE REPOSITORY : <a href="https://dart-os.github.io/deb/">https://dart-os.github.io/deb/</a></p>
+
+        <h4 class="mb-4">Package Repositories Keys</h4>
+        <p>OFFICIAL DART-OS GPG/other KEYS REPOSITORY : <a href="https://dart-os.github.io/keys/">https://dart-os.github.io/keys/</a></p>        
+        <br><br>
+        <h5 class="mb-4">[A] <u>Add dartos-experimental Repository to APT Sources</u></h5>
+        <p>
+        Currently <b>dartos-experimental</b> branch is accessable to use before a beta version of this OS is pushed<br><br>
+
+        Add <b>dartos-experimental</b> branch in your repository as : <br>
+
+        <pre>
+sudo sh -c 'echo "deb [arch=amd64] http://dart-os.github.io/deb/dartos dartos-experimental main contrib non-free non-free-firmware" > /etc/apt/sources.list.d/deb.dart-os.list'
+        </pre>
+        <br><br>
+        Add <b>dartos-experimental</b> branch's GPG Key as:<br>
+
+        <pre>
+curl https://dart-os.github.io/keys/D0626CA83E6C820B/ | grep -o '[^[:space:]]*\.gpg' | cut -d'>' -f 2 | xargs -I {} sudo wget https://dart-os.github.io/keys/D0626CA83E6C820B/{} -O /etc/apt/trusted.gpg.d/{}
+        </pre>
+        </p>
       </div>
     </section>
     <section id="documentation" class="py-5">
