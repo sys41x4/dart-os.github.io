@@ -1,0 +1,17 @@
+## Template › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#setting-author-url
+# -------------------------------------
+# {author_id}:
+#   name: {full name}
+#   twitter: {twitter_of_author}
+#   url: {homepage_of_author}
+# -------------------------------------
+
+sys41x4:
+  name: Arijit Bhowmick
+  twitter: sys41x4
+  url: https://github.com/sys41x4/
+
+dart-os:
+  name: Dart OS
+  twitter: dart_os
+  url: https://github.com/dart-os/
