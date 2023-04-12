@@ -6,9 +6,9 @@ set -eu
 
 PAGES_BRANCH="dev-gh-pages"
 
-# if [[ $(git branch --show-current) == "main" ]]; then 
-#     PAGES_BRANCH="gh-pages";
-# fi
+if [[ $(git branch --show-current) == "main" ]]; then 
+    PAGES_BRANCH="gh-pages";
+fi
 
 _no_branch=false
 _backup_dir="$(mktemp -d)"
