@@ -19,22 +19,24 @@ layout: compress
 
   {% include head.html %}
 
+<!-- main -->
+<script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
   <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+    {% include header.html %}
+    <!-- {% include sidebar.html %} -->
 
-    {% include sidebar.html %}
-
-    {% include topbar.html %}
-
-    <div id="main-wrapper" class="d-flex justify-content-center">
-      <div id="main" class="container pl-xl-4 pr-xl-4">
+    <!-- {% include topbar.html %} -->
+    
+    <!-- <div class="header-spacer"></div> -->
+    <div id="main-wrapper" class="d-flex">
+      <div id="main" class="page-title">
 
         {{ content }}
 
-        {% include footer.html %}
-
       </div>
 
-      {% include search-results.html %}
+      <!-- {% include search-results.html %} -->
 
     </div> <!-- #main-wrapper -->
 
@@ -44,8 +46,8 @@ layout: compress
 
     <div id="mask"></div>
 
-    <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button">
-      <i class="fas fa-angle-up"></i>
+    <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow share-wrapper" role="button">
+      <i class="fa fa-angle-up" style="color: #ffffff"></i>
     </a>
 
     {% if site.pwa.enabled %}
@@ -64,10 +66,11 @@ layout: compress
         </div>
       </div>
     {% endif %}
-
-    {% include search-loader.html %}
+    
+    {% include footer.html %}
 
     {% include js-selector.html %}
+    {% include foot.html %}
 
   </body>
 

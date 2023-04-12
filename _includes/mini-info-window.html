@@ -1,0 +1,19 @@
+{% for contact in site.footer.contact %}
+  {% if contact.name and contact.info %}
+    <div id="{{ contact.name | downcase }}-wlink-info">
+      <p>
+        {{ contact.info }}
+      </p>
+
+      <img src="{{ contact.infoImg | absolute_url }}" alt="img" onerror="this.style.display = 'none'" id="qr-code" />
+
+      <!-- {% if contact.name == 'WeChat' %}
+        <style>
+          #{{ contact.name | downcase }}-wlink-info {
+            @extend .widget;
+          }
+        </style>
+      {% endif %} -->
+    </div>
+  {% endif %}
+{% endfor %}

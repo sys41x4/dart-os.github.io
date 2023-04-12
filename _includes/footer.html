@@ -1,36 +1,93 @@
-<!-- The Footer -->
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <strong>CONTACT</strong>
 
-<footer class="row pl-3 pr-3">
-  <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
-    <div class="footer-left">
-      <p class="mb-0">
-        © {{ 'now' | date: "%Y" }}
-        <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
-        {% if site.data.locales[lang].copyright.brief %}
-        <span data-toggle="tooltip" data-placement="top"
-          title="{{ site.data.locales[lang].copyright.verbose }}">{{ site.data.locales[lang].copyright.brief }}</span>
-        {% endif %}
-      </p>
+        <div class="social-links">
+          {% for contact in site.footer.contact %}
+            <div class="social-link contact-links">
+
+              <!-- {% assign contact_icon_path = "/assets/img/icons/" | append: contact.name | downcase | append: ".png" | absolute_url %}
+              <img
+                src="{{ contact_icon_path }}"
+                alt="{{ contact.name | downcase }}"
+              /> -->
+              <i class='{{ contact.icon }}'></i>
+              <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link" data-widget-id="{{ contact.name | downcase }}-wlink">
+                {% if contact.value and contact.value != "" and contact.value != nil %}
+                  {{ contact.value }}
+                {% else %}
+                  {{ contact.name }}
+                {% endif %}
+              </a>
+            </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <strong>FOLLOW</strong>
+
+        <div class="social-links follow-links">
+          {% for follow in site.footer.follow %}
+            <div class="social-link">
+
+              <!-- {% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
+              <img
+                src="{{ follow_icon_path }}"
+                alt="{{ follow.name | downcase }}"
+              /> -->
+              <i class='{{ follow.icon }}'></i>
+              <a href="{{ follow.link }}">
+                {% if follow.value and follow.value != "" and follow.value != nil %}
+                  {{ follow.value }}
+                {% else %}
+                  {{ follow.name }}
+                {% endif %}
+              </a>
+            </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if site.footer.show_powered_by == true %}
+        <div class="footer-col footer-col-3 powered-by">
+      
+          <div class="footer-right">
+            <p class="mb-0">
+              {% capture _platform %}
+                <a href="#" target="_blank" rel="noopener">Privacy Policy</a>
+              {% endcapture %}
+              
+              {% capture _theme %}
+                <a href="#" target="_blank" rel="noopener">Terms of Use</a>
+              {% endcapture %}
+
+              {{ site.data.locales[lang].meta
+                | default: ':PLATFORM | :THEME'
+                | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
+              }}
+            </p>
+          </div>
+          <div class="footer-left">
+            <p class="mb-0">
+              © {{ 'now' | date: "%Y" }}
+              <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
+              {% if site.data.locales[lang].copyright.brief %}
+              <span data-toggle="tooltip" data-placement="top"
+                title="{{ site.data.locales[lang].copyright.verbose }}">{{ site.data.locales[lang].copyright.brief }}</span>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+        {% include post-sharing.html %}
+      {% endif %}
+
     </div>
-
-    <div class="footer-right">
-      <p class="mb-0">
-        {% capture _platform %}
-          <a href="#" target="_blank" rel="noopener">Privacy Policy</a>
-        {% endcapture %}
-
-        {% capture _theme %}
-          <a href="#" target="_blank" rel="noopener">Terms of Use</a>
-        {% endcapture %}
-
-        {{ site.data.locales[lang].meta
-          | default: ':PLATFORM  :THEME'
-          | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
-        }}
-
-      </p>
-    </div>
-
   </div>
-
 </footer>
+
+{% include mini-info-window.html %}

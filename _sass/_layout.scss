@@ -1,0 +1,237 @@
+/**
+ * Site header
+ */
+.site-header {
+  // border-bottom: 1px solid $grey-color-light;
+  border-bottom: transparent;
+  min-height: 56px;
+  width: 100%;
+  z-index: 9999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &.halfScrolled {
+    background-color: #1a58ba;
+  }
+
+  &.scrolled {
+    // background: #1b1b1e;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
+  }    
+
+  @include media-query($on-mobile) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  // Positioning context for the mobile navigation icon
+  position: fixed;
+}
+
+.page-title {
+  width: 100%;
+}
+
+.site-title {
+  font-size: 20px;
+  // line-height: 56px;
+  letter-spacing: -1px;
+  float: left;
+
+  img {
+    height: 40px;
+  }
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+/**
+ * Site nav
+ */
+.site-nav {
+  z-index: 9999;
+  float: right;
+  line-height: 56px;
+  position: fixed;
+  right: 0;
+  padding-right: 2em;
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    // color: $text-color;
+    color: #e5e3e0;
+    line-height: $base-line-height;
+    background-color: transparent;
+
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    &.scrolled {
+      color: #ffffff;
+    }
+  }
+
+  .menu {
+    clear: both;
+    border: none;
+    display: flex;
+    background-color: transparent;
+    min-width: 10em;
+    padding-bottom: 2px;
+    color: #000;
+  
+
+    a {
+      border: none;
+      
+      &:hover {
+        background-color: #1b1b1e;
+      }
+
+    }
+  }
+
+  @include media-query($on-mobile) {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 4px;
+      text-align: center;
+
+      background: #ffffff url($base-url + '/assets/img/menu.png') 6px 4px no-repeat;
+      background-size: 26px 26px;
+    }
+
+    .menu {
+      clear: both;
+      display: none;
+      background-color: #ffffff;
+      min-width: 10em;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      font-size: 16px;
+      display: block;
+      padding: 6px 16px;
+    }
+  }
+}
+
+.header-spacer {
+  min-height: 40vh;
+}
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid transparent;
+  background-image: linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
+  padding: $spacing-unit 0;
+  position: absolute;
+  // position: relative !important;
+  bottom: 0;
+  width: 100%;
+
+  @include media-query($on-mobile) {
+    padding-top: 10px;
+  }
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: #ffffff;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 {
+  width: -webkit-calc(33% - (#{$spacing-unit} / 2));
+  width: calc(33% - (#{$spacing-unit} / 2));
+}
+
+.follow-links > .social-link {
+  flex: 0 50%;
+}
+
+.powered-by {
+  font-size: 13px !important;
+  color: #c4c4c4;
+}
+
+@include media-query($on-mobile) {
+  .footer-col {
+    float: none;
+    width: 100%;
+  }
+}
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+}
+
+.page-heading {
+  font-size: 20px;
+}
+
+.header-banner {
+  background-color: #1a58ba;
+  color: #e5e3e0;
+  border-radius: 0%;
+}
+
+.bg-grad {
+  background: -moz-linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #1a58ba), color-stop(100%, #820b0b));
+  background: -webkit-linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
+  background: -o-linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
+  background: -ms-linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
+  background: linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
+}

@@ -1,37 +1,14 @@
-# The Site Configuration
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Import the theme
-theme: jekyll-theme-chirpy
-
-# Only if your site type is GitHub Project sites and doesn't have a custom domain,
-# change below value to '/projectname'.
-baseurl: '/'
-
-# current repository Name if repository is not <user-name>.github.io for GitHub Pages
-currentRepo: ''
-
-# the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
-lang: en-US
-
-# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Kolkata
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# --------------------------
-title: Dart OS                          # the main title
-
-tagline: System Security and Management  # it will display as the sub-title
-
-description: >-                        # used by seo meta and the atom feed
+title: Dart OS
+description: >- # this means to ignore newlines until "baseurl:"
   Dart OS
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://dart-os.github.io'
+baseurl: "" # the subpath of the site
+url: "https://dart-os.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/profile-pic.jpg
+google_analytics: "G-NC3B6J6580"
 
-github:
-  username: dart-os             # change to your github username
-
-twitter:
-  username: dart_os            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -46,66 +23,58 @@ social:
     # Uncomment below to add more social links
     - https://www.linkedin.com/in/sys41x4
 
-google_site_verification: google_meta_tag_verification # change to your verification string
-# --------------------------
 
-google_analytics:
-  id: 'G-NC3B6J6580'              # fill in your Google Analytics ID
-  # Google Analytics pageviews report settings
-  pv:
-    proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
-    cache_path:       # the local PV cache data, friendly to visitors from GFW region
+header:
+  pages:
+    - name: Home
+      slug: /
+    - name: Downloads
+    - name: Project
+    - name: About
+    - name: Links
+    - name: Donate
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode:   dark # [light|dark]
-
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-img_cdn: ''
-
-# the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/profilePic.png
-
-# boolean type, the global switch for ToC in posts.
-toc: true
-
-disqus:
-  comments: false  # boolean type, the global switch for posts comments.
-  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
-paginate: 10
-
-# ------------ The following options are not recommended to be modified ------------------
-
-kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
-
-collections:
-  tabs:
-    output: true
-    sort_by: order
-
+footer:
+  show_powered_by: true
+  contact:
+    - name: Email
+      value: sys41x4@zohomail.in
+      icon: "fa fa-envelope"
+      link: mailto:sys41x4@zohomail.in
+    - name: Discord
+      icon: "fa fa-group"
+      value: "Discord"
+      info: "Join the Discord Community at <strong>101 Bytes</strong>, or scan the joining QR code:"
+      infoImg: "/assets/img/101-Bytes-discord-qr-code.png"
+      link: "https://discord.gg/8My5m9jNMG"
+    - name: Reddit
+      icon: "fa fa-reddit"
+      value: "Reddit"
+      info: "Join the Reddit Community at <strong>dart_os</strong>, or scan the joining QR code:"
+      infoImg: "/assets/img/dart-os-reddit-qr-code.png"
+      link: "https://www.reddit.com/r/dart_os/"
+  follow:
+    - name: Twitter
+      icon: "fa fa-twitter"
+      link: http://twitter.com/dart_os
+      username: "@dart_os"
+    # - name: Facebook
+    #   icon: "fa fa-facebook"
+    #   link: http://facebook.com/sys41x4
+    - name: LinkedIn
+      icon: "fa fa-linkedin"
+      link: http://linkedin.com/in/sys41x4
+    - name: GitLab
+      icon: "fa fa-gitlab"
+      link: http://gitlab.com/dart-os
+    - name: GitHub
+      icon: "fa fa-github"
+      link: http://github.com/dart-os
+    # - name: Dribbble
+    #   link: https://dribbble.com/YourDribbbleUsername
+    - name: RSS
+      icon: "fa fa-rss"
+      link: /feed.xml
 
 defaults:
   -
@@ -133,9 +102,6 @@ defaults:
       permalink: /:title/
       dynamic_title: true    # Hide title in mobile screens.
 
-sass:
-  style: compressed
-
 compress_html:
   clippings: all
   comments: all
@@ -145,7 +111,26 @@ compress_html:
   ignore:
     envs: [development]
 
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+plugins:
+  - jekyll-feed
+
+# Excluded items
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - '*.gem'
   - '*.gemspec'
   - tools
@@ -156,11 +141,5 @@ exclude:
   - node_modules
   - '*.json'
 
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+# Used for defeating caching
+version: 1
