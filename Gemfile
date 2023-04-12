@@ -6,8 +6,6 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve
 gem "jekyll", "~> 4.0.0"
 
-gemspec
-
 # Plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
