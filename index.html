@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dart OS</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Dart OS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#documentation">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#support">Support</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Welcome to Dart OS</h1>
+        <p class="lead">Dart OS is a Linux-based operating system designed for offensive and defensive security, and other security-related tasks.<br>
+                        Currently it is in alpha stage, and is continously developed and contributed by <a target="_blank" href="https://sys41x4.github.io/">Arijit Bhowmick [sys41x4]</a>
+        </p>
+      </div>
+    </header>
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Features</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Powerful command-line interface</h4>
+                <p class="card-text">Dart OS includes a powerful command-line interface that allows you to easily perform complex security-related tasks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Wide range of security tools pre-installed</h4>
+                <p class="card-text">Dart OS comes with a wide range of pre-installed security tools, so you don't have to waste time installing them yourself.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Customizable interface</h4>
+                <p class="card-text">Dart OS allows you to customize the interface to suit your needs, making it easy to use and navigate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="download" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Download Dart OS</h2>
+        <p>Download Dart OS for free and start using it today! [Currently Under-development]</p>
+        <a href="#" class="btn btn-primary">Download Now</a>
+      </div>
+    </section>
+    <section id="view-project-repository" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Project Repository</h2>
+        <p>Check out the Project Repository</p>
+        <a target="_blank" href="https://gitlab.com/dart-os/" class="btn btn-primary">Project Repository</a>
+      </div>
+    </section>
+    <section id="view-project-repository" class="py-5 bg-light">
+      <div class="container">
+        <h4 class="mb-4">Package Repositories</h4>
+        <p>OFFICIAL DART-OS DEBIAN PACKAGE REPOSITORY : <a href="https://dart-os.github.io/deb/">https://dart-os.github.io/deb/</a></p>
+
+        <h4 class="mb-4">Package Repositories Keys</h4>
+        <p>OFFICIAL DART-OS GPG/other KEYS REPOSITORY : <a href="https://dart-os.github.io/keys/">https://dart-os.github.io/keys/</a></p>        
+        <br><br>
+        <h5 class="mb-4">[A] <u>Add dartos-experimental Repository to APT Sources</u></h5>
+        <p>
+        Currently <b>dartos-experimental</b> branch is accessable to use before a beta version of this OS is pushed<br><br>
+
+        Add <b>dartos-experimental</b> branch in your repository as : <br>
+
+        <pre>
+sudo sh -c 'echo "deb [arch=amd64] http://dart-os.github.io/deb/dartos dartos-experimental main contrib non-free non-free-firmware" > /etc/apt/sources.list.d/deb.dart-os.list'
+        </pre>
+        <br><br>
+        Add <b>dartos-experimental</b> branch's GPG Key as:<br>
+
+        <pre>
+curl https://dart-os.github.io/keys/D0626CA83E6C820B/ | grep -o '[^[:space:]]*\.gpg' | cut -d'>' -f 2 | xargs -I {} sudo wget https://dart-os.github.io/keys/D0626CA83E6C820B/{} -O /etc/apt/trusted.gpg.d/{}
+        </pre>
+        </p>
+      </div>
+    </section>
+    <section id="documentation" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Documentation</h2>
+        <p>Learn how to use Dart OS with our comprehensive documentation.</p>
+        <a href="https://gitlab.com/dart-os/" class="btn btn-primary">View Documentation</a>
+      </div>
+    </section>
+    <section id="support" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Support</h2>
+        <p>Need help with Dart OS? Contact our support team for assistance.</p>
+        <a target="_blank" href="https://sys41x4.github.io/" class="btn btn-primary">Contact Support</a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 Dart OS. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <a href="#" class="text-white mr-3">Privacy Policy</a>
+            <a href="#" class="text-white">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
