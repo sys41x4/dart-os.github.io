@@ -8,7 +8,7 @@
   width: 100%;
   z-index: 9999;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 1em;
 
   &.halfScrolled {
     background-color: #1a58ba;
@@ -38,9 +38,10 @@
   // line-height: 56px;
   letter-spacing: -1px;
   float: left;
+  padding-top: 0.5rem;
 
   img {
-    height: 40px;
+    height: 2em;
   }
 
   &,
@@ -57,11 +58,14 @@
   float: right;
   line-height: 56px;
   position: fixed;
-  right: 0;
-  padding-right: 2em;
+  right: 1em;
+  padding-top: 0.5em;
+  // padding-right: 2em;
 
   .menu-icon {
     display: none;
+    padding-right: 2em;
+    color: #ffffff;
   }
 
   .page-link {
@@ -86,12 +90,14 @@
     display: flex;
     background-color: transparent;
     min-width: 10em;
+    padding-right: 0;
     padding-bottom: 2px;
     color: #000;
   
 
     a {
       border: none;
+      // border: 1px solid #2e2e2e;
       
       &:hover {
         background-color: #1b1b1e;
@@ -102,10 +108,10 @@
 
   @include media-query($on-mobile) {
     position: absolute;
-    top: 12px;
-    right: 24px;
+    top: 1.3rem;
+    right: 0;
 
-    border: 1px solid $grey-color-light;
+    // border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
 
@@ -115,17 +121,19 @@
       width: 36px;
       height: 26px;
       line-height: 0;
-      padding-top: 4px;
+      padding-top: 0;
       text-align: center;
-
-      background: #ffffff url($base-url + '/assets/img/menu.png') 6px 4px no-repeat;
+      font-size: 2rem;
+      padding-bottom: 0.8em;
+      // background: #00000000 url($base-url + 'assets/img/menu.png') 6px 4px no-repeat;
       background-size: 26px 26px;
     }
 
     .menu {
       clear: both;
       display: none;
-      background-color: #ffffff;
+      width: 500rem;
+      background-color: #000000;
       min-width: 10em;
       padding-bottom: 5px;
     }
@@ -133,7 +141,8 @@
     .page-link {
       font-size: 16px;
       display: block;
-      padding: 6px 16px;
+      padding: 6px 2em;
+      border: 0.5px solid #202020 !important;
     }
   }
 }
@@ -150,8 +159,8 @@
   border-top: 1px solid transparent;
   background-image: linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
   padding: $spacing-unit 0;
-  position: absolute;
-  // position: relative !important;
+  // position: absolute;
+  position: relative !important;
   bottom: 0;
   width: 100%;
 

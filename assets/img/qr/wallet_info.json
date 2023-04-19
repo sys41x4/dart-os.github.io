@@ -1,0 +1,17 @@
+{
+    "id1":{
+        "chain":"BTC",
+        "wallet_address":"1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+        "supported_crypto":["BTC", "ETH", "LTC"]
+   },
+   "id2":{
+        "chain":"ETH",
+        "wallet_address":"0xC2B2b82a74496E49e24d98F92Daf6B37B6Df80E1",
+        "supported_crypto":["BTC", "ETH", "ADA"]
+   },
+   "id3":{
+        "chain":"DOGE",
+        "wallet_address":"DH5yaieqoZN36fDVciNyRueRGvGLR3mr7L",
+        "supported_crypto":["BTC", "DOGE", "XRP"]
+   }
+}

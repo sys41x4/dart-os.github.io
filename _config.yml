@@ -1,14 +1,52 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# The Site Configuration
+
+# Import the theme
+# theme: flat-corp_jekyll_theme
+
+# the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
+lang: en-US
+
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: Asia/Kolkata
+
 title: Dart OS
 description: >- # this means to ignore newlines until "baseurl:"
   Dart OS
 baseurl: "/" # the subpath of the site
 url: "https://dart-os.github.io" # the base hostname & protocol for the site
+
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+img_cdn: ''
+
 og_image: /assets/img/profile-pic.jpg
+# the avatar on sidebar, support local or CORS resources
+avatar: /assets/img/profilePic.png
+
+# boolean type, the global switch for ToC in posts.
+toc: true
+
 google_analytics: "G-NC3B6J6580"
 
+
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
+theme_mode:   dark # [light|dark]
 
 social:
   # Change to your full name.
@@ -45,13 +83,13 @@ footer:
       icon: "fa fa-group"
       value: "Discord"
       info: "Join the Discord Community at <strong>101 Bytes</strong>, or scan the joining QR code:"
-      infoImg: "/assets/img/101-Bytes-discord-qr-code.png"
+      infoImg: "/assets/img/qr/101-Bytes-discord-qr-code.png"
       link: "https://discord.gg/8My5m9jNMG"
     - name: Reddit
       icon: "fa fa-reddit"
       value: "Reddit"
       info: "Join the Reddit Community at <strong>dart_os</strong>, or scan the joining QR code:"
-      infoImg: "/assets/img/dart-os-reddit-qr-code.png"
+      infoImg: "/assets/img/qr/dart-os-reddit-qr-code.png"
       link: "https://www.reddit.com/r/dart_os/"
   follow:
     - name: Twitter
@@ -114,6 +152,22 @@ compress_html:
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
 sass:
     style: :compressed
 plugins:

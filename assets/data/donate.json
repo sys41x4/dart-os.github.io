@@ -1,0 +1,145 @@
+{
+    "0":{
+        "type":"funds",
+        "name":"UPI",
+        "link":"#",
+        "value":"sys41x4@upi",
+        "supported_micro_services":["INR"],
+        "qr":{
+            "img":"/assets/img/qr/qr_UPI_sys41x4.png"
+        },
+        "comment":"You can donate through UPI"
+    },
+    "1":{
+        "type":"funds",
+        "name":"PayPal",
+        "link":"https://www.paypal.me/sys41x4",
+        "value":"Make a donation",
+        "supported_micro_services":["INR","USD","EUR"],
+        "qr":{
+            "img":"/assets/img/qr/qr_sys41x4_paypal.png"
+        },
+        "comment":"You can make a donation in $ USD or in € Euro"
+    },
+    "2":{
+        "type":"funds",
+        "name":"Patreon",
+        "link":"https://www.patreon.com/sys41x4",
+        "value":"Become a Patreon",
+        "supported_micro_services":["USD","EUR"],
+        "qr":{
+            "img":"/assets/img/qr/qr_sys41x4_patreon.png"
+        },
+        "comment":"Alternatively you can set up a monthly donation via Patreon"
+    },
+    "3":{
+        "type":"funds",
+        "name":"BuyMeCoffee",
+        "link":"https://www.buymeacoffee.com/sys41x4",
+        "value":"Buy-Me-a-Coffee",
+        "supported_micro_services":["USD","EUR"],
+        "qr":{
+            "img":"/assets/img/qr/qr_sys41x4_buymeacoffee.png"
+        },
+        "comment":"Donate through Buy-Me-a-Coffee"
+    },
+    "4":{
+        "type":"cryptocurrency",
+        "name":"BNB Smart Chain",
+        "link":"#",
+        "value":"0xe703dc3941a174a64afcb088f3142483908004e5",
+        "supported_micro_services":["BND","BUSD","BTC","ETH","USDT","SOL","LTC","BCH","DOGE","BTTC","SHIB"],
+        "qr":{
+            "data":"0xe703dc3941a174a64afcb088f3142483908004e5"
+        },
+        "comment":""
+    },
+    "5":{
+        "type":"cryptocurrency",
+        "name":"Solana",
+        "link":"#",
+        "value":"2JzWTWFWMnF4f7bcoCoawUZDJZk5mH6D4Y6ADbGEvqqz",
+        "supported_micro_services":["SOL","USDT"],
+        "qr":{
+            "data":"2JzWTWFWMnF4f7bcoCoawUZDJZk5mH6D4Y6ADbGEvqqz"
+        },
+        "comment":""
+    },
+    "6":{
+        "type":"cryptocurrency",
+        "name":"Monero",
+        "link":"#",
+        "value":"8BdwN37WKnzbduYHJqF9S5By5a4KtUZ8sYuz8yFVei34jPcjHY1jeTbAgzy4TYrJAX7C89Vqgd2qfhngZCP6NeQ5Ufbp2wW",
+        "supported_micro_services":["MR"],
+        "qr":{
+            "data":"8BdwN37WKnzbduYHJqF9S5By5a4KtUZ8sYuz8yFVei34jPcjHY1jeTbAgzy4TYrJAX7C89Vqgd2qfhngZCP6NeQ5Ufbp2wW"
+        },
+        "comment":""
+    },
+    "7":{
+        "type":"cryptocurrency",
+        "name":"SEGWITBTC",
+        "link":"#",
+        "value":"bc1qpn5pzm3pllyc69shwyh4e37tn84wepmj4zankw",
+        "supported_micro_services":["BTC"],
+        "qr":{
+            "data":"bc1qpn5pzm3pllyc69shwyh4e37tn84wepmj4zankw"
+        },
+        "comment":""
+    },
+    "8":{
+        "type":"cryptocurrency",
+        "name":"OPTIMISM",
+        "link":"#",
+        "value":"0xe703dc3941a174a64afcb088f3142483908004e5",
+        "supported_micro_services":["ETH", "BUSD"],
+        "qr":{
+            "data":"0xe703dc3941a174a64afcb088f3142483908004e5"
+        },
+        "comment":""
+    },
+    "9":{
+        "type":"cryptocurrency",
+        "name":"Bitcoin Cash",
+        "link":"#",
+        "value":"1NkPxe4iB5yTYbvPtnU3vSJRe1DQznWaw9",
+        "supported_micro_services":["BCH"],
+        "qr":{
+            "data":"1NkPxe4iB5yTYbvPtnU3vSJRe1DQznWaw9"
+        },
+        "comment":""
+    },
+    "10":{
+        "type":"cryptocurrency",
+        "name":"TRX Tron",
+        "link":"#",
+        "value":"TBENzQr4bLH9rTuuQhotmGRefyzZTMVoDF",
+        "supported_micro_services":["TRX", "BTTC"],
+        "qr":{
+            "data":"TBENzQr4bLH9rTuuQhotmGRefyzZTMVoDF"
+        },
+        "comment":""
+    },
+    "11":{
+        "type":"cryptocurrency",
+        "name":"Litecoin",
+        "link":"#",
+        "value":"LQEG9j4D6TMrraUfFL3rApz8tFXqt8eRTW",
+        "supported_micro_services":["LTC"],
+        "qr":{
+            "data":"LQEG9j4D6TMrraUfFL3rApz8tFXqt8eRTW"
+        },
+        "comment":""
+    },
+    "12":{
+        "type":"cryptocurrency",
+        "name":"Dogecoin",
+        "link":"#",
+        "value":"D9aAqJmatDACCXSBfur1WSRS8zZN4hqQ66\\",
+        "supported_micro_services":["DOGE"],
+        "qr":{
+            "data":"D9aAqJmatDACCXSBfur1WSRS8zZN4hqQ66\\"
+        },
+        "comment":""
+    }
+}

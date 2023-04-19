@@ -19,9 +19,6 @@ layout: compress
 
   {% include head.html %}
 
-<!-- main -->
-<script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
-
   <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
     {% include header.html %}
     <!-- {% include sidebar.html %} -->
@@ -66,7 +63,7 @@ layout: compress
         </div>
       </div>
     {% endif %}
-    
+    <div  style="min-height: 10vh"></div>
     {% include footer.html %}
 
     {% include js-selector.html %}

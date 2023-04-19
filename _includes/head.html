@@ -36,6 +36,9 @@
     {% endif %}
   {% endfor %}
 
+  <!-- main -->
+  <script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  
   <!-- Primary Meta Tags -->
   <title>{{ page_title }}</title>
   <meta name="title" content="{{ page_title }}"/>
@@ -60,8 +63,12 @@
     <meta property="twitter:site" content="{{ twitter_username }}"/>
   {% endif %}
 
+<!-- Lazy Load Images -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
   <!-- ICONS CSS -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
 
    <!-- Include Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -79,5 +86,10 @@
   </script>
   <script async src="https://www.google-analytics.com/analytics.js"></script>
 
+  <!-- QR Code Controls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="{{ "/assets/js/lib/qr_controls.js" | absolute_url }}"></script>
+
+  
 
 </head>
