@@ -15,8 +15,8 @@ timezone: Asia/Kolkata
 title: Dart OS
 description: >- # this means to ignore newlines until "baseurl:"
   Dart OS
-baseurl: "/" # the subpath of the site
-url: "https://dart-os.github.io" # the base hostname & protocol for the site
+baseurl: "/dart-os.github.io/" # the subpath of the site
+url: "https://sys41x4.github.io" # the base hostname & protocol for the site
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
