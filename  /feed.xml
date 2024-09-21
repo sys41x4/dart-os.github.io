@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://dart-os.497949.xyz/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dart-os.497949.xyz/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-09-21T11:38:46+05:30</updated><id>https://dart-os.497949.xyz/feed.xml</id><title type="html">Dart OS</title><subtitle>Dart OS</subtitle><entry><title type="html">Documentation</title><link href="https://dart-os.497949.xyz/docs/" rel="alternate" type="text/html" title="Documentation" /><published>2023-04-02T05:02:00+05:30</published><updated>2023-04-02T05:02:00+05:30</updated><id>https://dart-os.497949.xyz/docs</id><content type="html" xml:base="https://dart-os.497949.xyz/docs/"><![CDATA[<h2 id="documentation">Documentation</h2>
+
+<h3 id="project-repository-link">Project Repository Link</h3>
+<p>GitLab Project Repository: <code class="highlighter-rouge">https://gitlab.com/dart-os</code><br />
+GitHub Binary and Hosting Repository<code class="highlighter-rouge">https://github.com/dart-os</code></p>
+
+<p>Documentation Main Page</p>
+
+<p>Thankyou, for reading the Documentation :)<br /></p>
+
+<p><a href="https://sys41x4.github.io/support/sys41x4">Support this Project</a></p>]]></content><author><name></name></author><category term="Operating System" /><category term="Docs" /><category term="Main" /><category term="Docs" /><category term="MAIN" /><summary type="html"><![CDATA[Documentation]]></summary></entry><entry><title type="html">About</title><link href="https://dart-os.497949.xyz/about/" rel="alternate" type="text/html" title="About" /><published>0000-01-01T00:00:56+05:53</published><updated>0000-01-01T00:00:56+05:53</updated><id>https://dart-os.497949.xyz/about</id><content type="html" xml:base="https://dart-os.497949.xyz/about/"><![CDATA[<h2> Project Repository Link </h2>
+<p>GitLab Project Repository: <code class="highlighter-rouge">https://gitlab.com/dart-os</code><br />
+GitHub Binary and Hosting Repository<code class="highlighter-rouge">https://github.com/dart-os</code></p>
+
+<p>About Page</p>
+
+<p><a href="https://sys41x4.github.io/support/sys41x4">Support this Project</a></p>]]></content><author><name></name></author><category term="Operating System" /><category term="About" /><category term="Dart OS" /><category term="About" /><category term="Dart OS" /><summary type="html"><![CDATA[Project Repository Link GitLab Project Repository: https://gitlab.com/dart-os GitHub Binary and Hosting Repositoryhttps://github.com/dart-os]]></summary></entry><entry><title type="html">Donate</title><link href="https://dart-os.497949.xyz/donate/" rel="alternate" type="text/html" title="Donate" /><published>0000-01-01T00:00:56+05:53</published><updated>0000-01-01T00:00:56+05:53</updated><id>https://dart-os.497949.xyz/donate</id><content type="html" xml:base="https://dart-os.497949.xyz/donate/"><![CDATA[<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <h2 class="mb-4 text-primary">Donating to Dart OS</h2>
+      </div>
+      <center>
+      <div class="col-6">
+        <center>
+          <div style="width: 100%;">
+            <!-- <canvas id="myChart"></canvas> -->
+            <img src="/assets/img/donate-chart.png" alt="current-donation-chart" />
+          </div>
+        </center>
+        <div class="text-center text-primary mt-2">
+          <strong>So far this month: $0 (0 donations)</strong>
+        </div>
+      </div>
+      </center>
+      <div class="col-md-12" style="padding: 1em;">
+        <p style="text-align: justify;">We are completely committed to maintaining the integrity and independence of <strong>Dart OS</strong>, and we firmly think that it can do so by drawing support from its community alone. Our method of fundraising is dependent on the generosity of people and groups that share our goal and are ready to make any contribution they can, no matter how small.<br /><br />
+        
+        By making an investment in Dart OS, you'll provide us the freedom to continue improving and growing our distribution without being diverted by for-profit endeavours or other sources of income. We kindly welcome you to take part in this campaign by making a donation to <strong>Dart OS</strong> and informing people who might be interested in helping our project about it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5">
+  <div class="max-width container">
+    <center>
+    <div id="funds-donation-section" class="row donate-section">
+      <div class="col-12">
+        <h1 class="mb-4 text-primary">How to Donate</h1>
+      </div>
+    </div>
+    </center>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div id="cryptocurrency-donation-section" class="col-md-12 donate-section" style="padding: 1em;">
+        <strong style="font-size: 2em;">Crypto Currency Networks</strong>
+        <p>Or you can donate anonymously to <strong>Dart OS</strong> using <strong>crypto-currencies</strong>.<br />
+        </p>
+      </div>
+      <div class="col-md-12">
+        <p>Note: Patrons and crypto-donations are anonymous and not listed on this page. Paypal donations are semi-anonymous, by default only your first name and the first letter of your surname will appear.</p>
+      </div>
+    </div>
+  </div>
+</section>]]></content><author><name></name></author><category term="Operating System" /><category term="Donate" /><category term="Dart OS" /><category term="Dart OS" /><category term="Donate" /><summary type="html"><![CDATA[Donating to Dart OS So far this month: $0 (0 donations) We are completely committed to maintaining the integrity and independence of Dart OS, and we firmly think that it can do so by drawing support from its community alone. Our method of fundraising is dependent on the generosity of people and groups that share our goal and are ready to make any contribution they can, no matter how small. By making an investment in Dart OS, you'll provide us the freedom to continue improving and growing our distribution without being diverted by for-profit endeavours or other sources of income. We kindly welcome you to take part in this campaign by making a donation to Dart OS and informing people who might be interested in helping our project about it. How to Donate Crypto Currency Networks Or you can donate anonymously to Dart OS using crypto-currencies. Note: Patrons and crypto-donations are anonymous and not listed on this page. Paypal donations are semi-anonymous, by default only your first name and the first letter of your surname will appear.]]></summary></entry><entry><title type="html">Downloads</title><link href="https://dart-os.497949.xyz/downloads/" rel="alternate" type="text/html" title="Downloads" /><published>0000-01-01T00:00:56+05:53</published><updated>0000-01-01T00:00:56+05:53</updated><id>https://dart-os.497949.xyz/downloads</id><content type="html" xml:base="https://dart-os.497949.xyz/downloads/"><![CDATA[<h3 id="project-repository-link">Project Repository Link</h3>
+<p>GitLab Project Repository: <code class="highlighter-rouge">https://gitlab.com/dart-os</code><br />
+GitHub Binary and Hosting Repository<code class="highlighter-rouge">https://github.com/dart-os</code></p>
+
+<p>Downloads Page</p>
+
+<p><a href="https://sys41x4.github.io/support/sys41x4">Support this Project</a></p>]]></content><author><name></name></author><category term="Operating System" /><category term="Downloads" /><category term="Dart OS" /><category term="Download" /><category term="OS" /><category term="Dart OS" /><summary type="html"><![CDATA[Project Repository Link GitLab Project Repository: https://gitlab.com/dart-os GitHub Binary and Hosting Repositoryhttps://github.com/dart-os]]></summary></entry><entry><title type="html">Features</title><link href="https://dart-os.497949.xyz/features/" rel="alternate" type="text/html" title="Features" /><published>0000-01-01T00:00:56+05:53</published><updated>0000-01-01T00:00:56+05:53</updated><id>https://dart-os.497949.xyz/features</id><content type="html" xml:base="https://dart-os.497949.xyz/features/"><![CDATA[<h2 id="features">Features</h2>
+
+<h3 id="project-repository-link">Project Repository Link</h3>
+<p>GitLab Project Repository: <code class="highlighter-rouge">https://gitlab.com/dart-os</code><br />
+GitHub Binary and Hosting Repository<code class="highlighter-rouge">https://github.com/dart-os</code></p>
+
+<p>Features Page</p>
+
+<p><a href="https://sys41x4.github.io/support/sys41x4">Support this Project</a></p>]]></content><author><name></name></author><category term="Operating System" /><category term="Features" /><category term="Main" /><category term="features" /><category term="Dart OS" /><summary type="html"><![CDATA[Features]]></summary></entry><entry><title type="html">About</title><link href="https://dart-os.497949.xyz/project/" rel="alternate" type="text/html" title="About" /><published>0000-01-01T00:00:56+05:53</published><updated>0000-01-01T00:00:56+05:53</updated><id>https://dart-os.497949.xyz/project</id><content type="html" xml:base="https://dart-os.497949.xyz/project/"><![CDATA[<h3 id="project-repository-link">Project Repository Link</h3>
+<p>GitLab Project Repository: <code class="highlighter-rouge">https://gitlab.com/dart-os</code><br />
+GitHub Binary and Hosting Repository<code class="highlighter-rouge">https://github.com/dart-os</code></p>
+
+<p>Project Page</p>
+
+<p><a href="https://sys41x4.github.io/support/sys41x4">Support this Project</a></p>]]></content><author><name></name></author><category term="Operating System" /><category term="About" /><category term="Dart OS" /><category term="About" /><category term="Dart OS" /><summary type="html"><![CDATA[Project Repository Link GitLab Project Repository: https://gitlab.com/dart-os GitHub Binary and Hosting Repositoryhttps://github.com/dart-os]]></summary></entry><entry><title type="html">Support</title><link href="https://dart-os.497949.xyz/support/" rel="alternate" type="text/html" title="Support" /><published>0000-01-01T00:00:56+05:53</published><updated>0000-01-01T00:00:56+05:53</updated><id>https://dart-os.497949.xyz/support</id><content type="html" xml:base="https://dart-os.497949.xyz/support/"><![CDATA[<h2 id="support">Support</h2>
+
+<h3 id="project-repository-link">Project Repository Link</h3>
+<p>GitLab Project Repository: <code class="highlighter-rouge">https://gitlab.com/dart-os</code><br />
+GitHub Binary and Hosting Repository<code class="highlighter-rouge">https://github.com/dart-os</code></p>
+
+<p>Support Page</p>
+
+<p><a href="https://sys41x4.github.io/support/sys41x4">Support this Project</a></p>]]></content><author><name></name></author><category term="Operating System" /><category term="Support" /><category term="Dart OS" /><category term="support" /><category term="Dart OS" /><summary type="html"><![CDATA[Support]]></summary></entry><entry><title type="html">404</title><link href="https://dart-os.497949.xyz/404.html" rel="alternate" type="text/html" title="404" /><published>0000-01-01T00:00:56+05:53</published><updated>0000-01-01T00:00:56+05:53</updated><id>https://dart-os.497949.xyz/404</id><content type="html" xml:base="https://dart-os.497949.xyz/404.html"><![CDATA[<div class="not-found-container">
+   <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>]]></content><author><name></name></author><category term="Operating System" /><category term="core" /><category term="error" /><category term="error" /><category term="404" /><summary type="html"><![CDATA[Page not found :( The requested page could not be found.]]></summary></entry></feed>
