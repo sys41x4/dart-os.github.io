@@ -15,8 +15,8 @@ timezone: Asia/Kolkata
 title: Dart OS
 description: >- # this means to ignore newlines until "baseurl:"
   Dart OS
-baseurl: "/dart-os.github.io/" # the subpath of the site
-url: "https://sys41x4.github.io" # the base hostname & protocol for the site
+baseurl: "/" # the subpath of the site
+url: "https://dart-os.497949.xyz" # the base hostname & protocol for the site
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -52,7 +52,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Dart OS
-  email: sys41x4@zohomail.com             # change to your email address
+  email: support+dartos@497949.xyz             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://www.gitlab.com/dart-os   # Project Repository
@@ -76,9 +76,9 @@ footer:
   show_powered_by: true
   contact:
     - name: Email
-      value: sys41x4@zohomail.in
+      value: support+dartos@497949.xyz 
       icon: "fa fa-envelope"
-      link: mailto:sys41x4@zohomail.in
+      link: mailto:support+dartos@497949.xyz 
     - name: Discord
       icon: "fa fa-group"
       value: "Discord"

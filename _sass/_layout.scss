@@ -244,3 +244,10 @@
   background-image: linear-gradient(150deg, #1a58ba 0%, #820b0b 100%);
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
 }
+
+.right-bottom-fixed {
+  position: fixed;
+  right: 1em;
+  z-index: 9999;
+  bottom: 1em;
+}

@@ -82,11 +82,11 @@ layout: compress
       <div class="container">
         <h3 class="mb-4">Package Repositories</h3>
         <p>OFFICIAL DART-OS DEBIAN PACKAGE REPOSITORY : <br>
-          <a href="https://dart-os.github.io/deb/">https://dart-os.github.io/deb/</a></p>
+          <a href="https://dart-os.497949.xyz/deb/">https://dart-os.497949.xyz/deb/</a></p>
 
         <h3 class="mb-4">Package Repositories Keys</h3>
         <p>OFFICIAL DART-OS GPG/other KEYS REPOSITORY :<br>
-          <a href="https://dart-os.github.io/keys/">https://dart-os.github.io/keys/</a></p>        
+          <a href="https://dart-os.497949.xyz/keys/">https://dart-os.497949.xyz/keys/</a></p>        
         <br><br>
         <h5 class="mb-4">[A] <u>Add dartos-experimental Repository to APT Sources</u></h5>
         <p>
@@ -95,13 +95,13 @@ layout: compress
         Add <b>dartos-experimental</b> branch in your repository as : <br>
 
         <pre>
-sudo sh -c 'echo "deb [arch=amd64] http://dart-os.github.io/deb/dartos dartos-experimental main contrib non-free non-free-firmware" > /etc/apt/sources.list.d/deb.dart-os.list'
+sudo sh -c 'echo "deb [arch=amd64] http://dart-os.497949.xyz/deb/dartos dartos-experimental main contrib non-free non-free-firmware" > /etc/apt/sources.list.d/deb.dart-os.list'
         </pre>
         <br>
         Add <b>dartos-experimental</b> branch's GPG Key as:<br>
 
         <pre>
-curl https://dart-os.github.io/keys/D0626CA83E6C820B/ | grep -o '[^[:space:]]*\.gpg' | cut -d'>' -f 2 | xargs -I {} sudo wget https://dart-os.github.io/keys/D0626CA83E6C820B/{} -O /etc/apt/trusted.gpg.d/{}
+curl https://dart-os.497949.xyz/keys/D0626CA83E6C820B/ | grep -o '[^[:space:]]*\.gpg' | cut -d'>' -f 2 | xargs -I {} sudo wget https://dart-os.497949.xyz/keys/D0626CA83E6C820B/{} -O /etc/apt/trusted.gpg.d/{}
         </pre>
         </p>
       </div>
